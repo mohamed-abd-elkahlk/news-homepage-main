@@ -1,38 +1,76 @@
+:root{
+    --soft-orange:hsl(35, 77%, 62%);
+    --soft-red:hsl(5, 85%, 63%);
+    --Off-white: hsl(36, 100%, 99%);
+    --Grayish-blue: hsl(233, 8%, 79%);
+    --Dark-grayish-blue: hsl(236, 13%, 42%);
+    --Very-dark-blue: hsl(240, 100%, 5%);
+
+}
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 body{
     display: flex;
-    min-height: 100vh;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
     flex-direction: column;
-    font-family: sans-serif;
+    font-family: 'Inter', sans-serif;
 }
-h1{
+p{
+    font-size: 15px;
+}
+.nav-link:hover{
+    color: var(--soft-red);
+}
+.content  h1{
     font-size: 46px;
+    color: var(--Very-dark-blue);
+}
+.content  p{
+    color: var(--Dark-grayish-blue);
+}
+.content .btn{
+    letter-spacing: 3px;
+    background-color: var(--soft-red);
+    color: white;
+    font-weight: 400;
+    border-radius: 0;
+    margin-bottom: 20px;
+}
+.content .btn:hover{
+    background-color: var(--Very-dark-blue);
+}
+.left-side{
+    background-color: var(--Very-dark-blue);
+}
+.left-side h2{
+    color: var(--soft-orange);
+}
+.left-side h5{
+    color: var(--Off-white);
+}
+.left-side h5:hover{
+    color: var(--soft-orange);
+    transition: .3s;
+    cursor: pointer;
+}
+.box h3{
+    color: var(--Grayish-blue);
     font-weight: bold;
-    color: hsl(240, 100%, 5%);
 }
-.btn-danger{
-    letter-spacing: 1px;
-}
-.left{
-    background-color:hsl(240, 100%, 5%) ;
-}
-.left h2{
-    color: hsl(35, 77%, 62%);
-}
-.left h4{
-    color: #fff;
-    font-size: 18px;
+.box h5{
+    color: var(--Very-dark-blue);
     font-weight: bold;
-
 }
-.left p{
-    color: #fff;
-    font-size: 16px;
-
+.box h5:hover{
+    color: var(--soft-red);
+    cursor: pointer;
+    transition: .3s;
+}
+.box p{
+    color: var(--Dark-grayish-blue);
 }
